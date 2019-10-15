@@ -4,36 +4,100 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_height="match_parent"
     tools:context="tj.belajar.asu.PhoneDetailActivity">
 
-    <TextView
-        android:id="@+id/tv_item_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+    <LinearLayout
+        android:layout_width="221dp"
+        android:layout_height="176dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="100dp"
+        android:minHeight="1dp"
+        android:orientation="vertical">
 
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Gambar">
 
-    <TextView
-        android:id="@+id/tv_item_id1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/nomor"
-        />
+        </TextView>
 
-    <Button
-        android:layout_marginStart="50px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pangil"
-        android:layout_marginEnd="50px"
-        >
+        <ImageView
+            android:id="@+id/img_view_phone_detail1"
+            android:layout_width="match_parent"
+            android:layout_height="156dp">
 
-    </Button>
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="100dp"
+        android:minHeight="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Detail">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:minHeight="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Nama" />
+
+            <TextView
+                android:id="@+id/tv_item_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="No Telp" />
+
+            <TextView
+                android:id="@+id/tv_item_id1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50px"
+            android:layout_marginEnd="50px"
+            android:text="Pangil">
+
+        </Button>
+    </LinearLayout>
 
 </LinearLayout>

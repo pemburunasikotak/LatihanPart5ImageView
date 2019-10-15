@@ -23,29 +23,17 @@ class MainActivity : AppCompatActivity() {
     private fun phoneItemClicked (phoneItem : PhoneData){
         val  showDetailActivityIntent = Intent(this, PhoneDetailActivity::class.java)
         showDetailActivityIntent.putExtra(Intent.EXTRA_TEXT, phoneItem.phone.toString())
+        showDetailActivityIntent.putExtra("data",phoneItem)
         startActivity(showDetailActivityIntent)
     }
 
     private fun createPhoneDate() : List<PhoneData>{
         val partList = ArrayList<PhoneData>()
-        partList.add(PhoneData(85786534862,"TA"))
-        partList.add(PhoneData(85786534861,"TB"))
-        partList.add(PhoneData(85786534863,"TC"))
-        partList.add(PhoneData(85786534864,"TD"))
-        partList.add(PhoneData(85786534865,"TE"))
-        partList.add(PhoneData(85786534866,"TF"))
-        partList.add(PhoneData(85786534867,"TG"))
-        partList.add(PhoneData(85786534870,"TH"))
-        partList.add(PhoneData(85786534871,"TI"))
-        partList.add(PhoneData(85786534872,"TJ"))
-        partList.add(PhoneData(85786534873,"TK"))
-        partList.add(PhoneData(85786534874,"TL"))
-        partList.add(PhoneData(85786534875,"TM"))
-        partList.add(PhoneData(85786534876,"TN"))
-        partList.add(PhoneData(85786534877,"TO"))
-        partList.add(PhoneData(85786534878,"TP"))
-        partList.add(PhoneData(85786534879,"TQ"))
-        partList.add(PhoneData(85786534880,"TR"))
+        partList.add(PhoneData(85786534862,"TA","https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/510px-Pablo_picasso_1.jpg"))
+        partList.add(PhoneData(85786534861,"TB","https://miro.medium.com/max/3200/1*2dfK1SVSJNNxuGm-sEYzbw.png"))
+        partList.add(PhoneData(85786534863,"TC","https://image.shutterstock.com/image-vector/thin-line-snap-finger-like-260nw-1070110487.jpg"))
+        partList.add(PhoneData(85786534864,"TD","http://static.simpledesktops.com/uploads/desktops/2019/06/22/Dinosaur_eye_2.png.620x390_q100.png"))
+
         return partList
     }
 }
